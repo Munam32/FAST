@@ -1,0 +1,35 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main()
+{
+/* ofstream out;
+out.open("test.txt");
+out<<"It is a test file ... ";
+out.close();
+
+char ch;
+ifstream in;
+in.open("PFs.cpp");
+while(!in.eof())
+{
+// in>>ch;
+ch=in.get();
+cout<<ch;
+}
+*/
+
+
+char buffer[100];
+fstream fileW,fileR;
+fileW.open("test2.txt",ios::out);
+fileW<<1234;
+//fileW.close();
+
+fileR.open("test2.txt",ios::in);
+fileR>>buffer;
+cout<<buffer;
+fileR.close();
+
+}

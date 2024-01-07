@@ -1,0 +1,60 @@
+Multiple independant news organizations claim it as a joint operation of US Israel
+
+
+Worlds first digital weapon - stux net(worm)
+joint operation of us and israel
+Upoaded to iranian nuclear facility(natanz)
+nuclear facility making a bomb
+
+stux net sabotaged centrifuges used to enrich uranium and make them explode
+
+2007- Stuxnet V1 launched after seeing centrifuges explode
+
+Centrifuges spun uranium hexafluoride at super sonic speeds. - to seperate isotopes to enrich uranium - pressure after enriching to be released using valves.
+
+stuxnet aimed to keep these valves closed by infiltrating computers that monitored this process
+
+uranium gas solidifies inside the centrifuge causing it to spin out of control and inside pressure may cause it to explode, wasting uranium
+
+
+					-----------Infiltrarion-------------- 2007
+
+Iran has air gapped facility (systems are kept at a specified distance from wires and other technical equipment to avoid electromagnetic waves), so systems are not connected to external networks.
+
+Stuxnet is uploaded physically by a removeable device to the computers via a inside man
+
+Stuxnet is built to operate for a long time in the background while being un noticed.
+
+It uses a rootkit to avoid detection from the operating system    *****
+
+Uses a stolen digital certificate to authorize and autenticate(trusted source) its commands. - used private keys from 2 maufacturers in Taiwan to sign digital certificates
+
+
+						-----------Infiltrarion-------------- 2009
+
+Iran was still making significant process despite being slowed down
+
+New Version of stuxnet uses 4 zero day exploits. (Cyber attack making use of firmware vulnerablity, usually unknown to vendor to breach the system - original one used bug in auto run feature of windows)
+
+
+							-----Working--------
+
+
+overrides softwares contolling centrifuges, but altering their files
+
+Due to this, systems monitoring centrifuge's speed wouldn't detect any malfunctions, preventing altering of speeds to normal
+
+
+
+
+							----STUXNET V2----
+
+This worm spread to the network of natan facilty.
+
+Infected Computer when connected to the internal network, allowed stuxnet to reach every computer on the facility.
+
+Some of these computers were carried outside the facility to connect to external networks, causing stux net to spread world wide.
+
+It spread at an alarming speed, it was inevitable to stop it now.
+
+

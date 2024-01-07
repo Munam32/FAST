@@ -1,0 +1,98 @@
+CH : 15 PHYSICS
+
+SAMPLE : 
+15.01
+
+PROBLEMS PG# 436
+1 - 11, 13
+
+DERIVATIONS :
+1) Analysis Of General Equation of S.H.M
+2) Angular Frequency ( ω =2πf ) Using Gen Equation
+3) Displacement , Velocity , Acceleration using Gen Equation
+4) Time Period of Mass - Spring System
+5) Time Period of Torsional Pendulum
+6) Time Period of Simple Pendulum
+7) Uniform Circular Motion And S.H.M
+8)  Displacement , Velocity , Acceleration using Projection Method
+
+
+CH : 23 PHYSICS
+
+SAMPLE : 
+23.02, 23.03, 23.04, 23.06, 23.07
+
+PROBLEMS PG# 680-682
+
+19, 21, 22, 24, 25, 27, 28, 30, 31, 36, 41, 45, 46, 47
+
+DERIVATIONS :
+
+ Applying Gauss's Law On: 
+
+1. Cylindrical Symmetry
+2. Planer Symmetry 
+3. Spherical Symmetry
+ (Both inside and outside)
+
+CH : 26 PHYSICS ( For MCQs Only )
+
+SAMPLE : 
+26.02, 26.04
+
+PROBLEMS
+ PG# 765-767
+
+1, 2, 4, 5, 7, 8, 10, 11, 12, 13, 14, 15, 17, 18,
+19, 23, 29, 31, 32
+
+DERIVATIONS :
+1. J=(conductivity)*E
+2. Relation Between Drift Velocity And Current Density (J=n*e*vd)  
+3. Macroscopic Formula Of Ohm's Law R=((rho)*L)/A 
+
+As This Chapter Is Only To Be Prepared For MCQs Only So You All Had to Have its Concepts Crystal Clear Especially Factors Affecting Resistivity, Resistance AND Its Dependence  
+For Instance CH 13 OF 12th Class Physics Will Be Quite Helpful .....CH : 28 PHYSICS 
+
+SAMPLE : 
+28.01, 28.03, 28.05, 28.06
+
+PROBLEMS
+ PG# 829-831 
+
+1,3,4,5,13,14,21,23,24,25,39,40,41,42,45
+
+DERIVATIONS :
+
+1. Cross Fields: The Hall Effect v v v v v v IMP
+2. Circulating Charged Particle Mostly in Paper
+3. Magnetic Force On A Current Carrying wire 
+
+Practical implementation of especially left and right hand rules is v v v v useful in Final Exams so must prepare accordinglyCH : 29 PHYSICS 
+
+SAMPLE : 
+29.03, 29.04
+
+PROBLEMS
+ PG# 856-861 
+
+1,3,35,36,43,45,49,51,52,53
+
+DERIVATIONS :
+
+1. Biot - Savart's Law
+ v v v v v v IMP
+
+2. Ampere's Law
+ 
+3. Magnetic Field Outside A Current Carrying wire 
+
+4. Magnetic Field Inside A Current Carrying wire
+
+5. Magnetic Field Inside A Solenoid
+
+6. Magnetic Field Inside A Toroid
+
+7. Force B/t 2 Parallel Current Carrying wires
+
+V V V V V IMP for Derivations and Concepts
