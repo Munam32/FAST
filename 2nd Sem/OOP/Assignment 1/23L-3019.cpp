@@ -254,7 +254,7 @@ void InputArray(ifstream& infile)
 				*temp = number;
 				 temp++;
 			}
-			+
+			
 			infile >> size2;			
 
 
