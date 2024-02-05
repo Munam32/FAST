@@ -274,7 +274,6 @@ void InputArray(ifstream& infile)
 
 
 			//feeds 2nd array contents
-
 			for (int i = 0; i < size2; i++)
 			{
 				infile >> number;
