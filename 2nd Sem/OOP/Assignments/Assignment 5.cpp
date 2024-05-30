@@ -12,7 +12,7 @@ public:
     }
     
 
-    static void DeepCopy(char* to, char* from) {
+     static void DeepCopy(char* to, char* from) {
 
         int i = 0;
 
