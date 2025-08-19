@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="NFS Database">
+    <mxGraphModel dx="1428" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="car_company_entity" value="Car_Company" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#f0f8ff;strokeColor=#4682b4;" parent="1" vertex="1">
+          <mxGeometry x="50" y="50" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="car_company_attributes" value="company_id&#xa;company_name&#xa;founding_year" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="car_company_entity" vertex="1">
+          <mxGeometry y="30" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cars_entity" value="Cars" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#f0f8ff;strokeColor=#4682b4;" parent="1" vertex="1">
+          <mxGeometry x="50" y="360" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cars_attributes" value="car_id&#xa;company_id&#xa;model&#xa;make&#xa;year_introduced&#xa;top_speed&#xa;acceleration" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="cars_entity" vertex="1">
+          <mxGeometry y="30" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="game_editions_entity" value="Game_Editions" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#f0f8ff;strokeColor=#4682b4;" parent="1" vertex="1">
+          <mxGeometry x="650" y="360" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="game_editions_attributes" value="edition_id&#xa;edition_name&#xa;release_date&#xa;platform" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="game_editions_entity" vertex="1">
+          <mxGeometry y="30" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="characters_entity" value="Characters" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#f0f8ff;strokeColor=#4682b4;" parent="1" vertex="1">
+          <mxGeometry x="350" y="30" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="characters_attributes" value="character_id&#xa;character_name&#xa;default_role" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="characters_entity" vertex="1">
+          <mxGeometry y="30" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="missions_entity" value="Missions" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#f0f8ff;strokeColor=#4682b4;" parent="1" vertex="1">
+          <mxGeometry x="650" y="50" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="missions_attributes" value="mission_id&#xa;edition_id&#xa;mission_name&#xa;description" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="missions_entity" vertex="1">
+          <mxGeometry y="30" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cars_in_editions_entity" value="Cars_in_Editions" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#f0f8ff;strokeColor=#4682b4;" parent="1" vertex="1">
+          <mxGeometry x="380" y="310" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cars_in_editions_attributes" value="car_id&#xa;edition_id&#xa;performance_rating&#xa;availability_condition&#xa;special_features" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="cars_in_editions_entity" vertex="1">
+          <mxGeometry y="30" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="characters_in_editions_entity" value="Characters_in_Editions" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#f0f8ff;strokeColor=#4682b4;" parent="1" vertex="1">
+          <mxGeometry x="60" y="560" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="characters_in_editions_attributes" value="character_id&#xa;edition_id&#xa;role_in_edition&#xa;importance_level&#xa;storyline_details" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="characters_in_editions_entity" vertex="1">
+          <mxGeometry y="30" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="car_company_to_cars" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#708090;strokeWidth=1.5;" parent="1" source="car_company_attributes" target="cars_entity" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="140" y="170" as="sourcePoint" />
+            <mxPoint x="140" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cars_to_junction" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#708090;strokeWidth=1.5;" parent="1" source="cars_attributes" target="cars_in_editions_attributes" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="240" y="440" as="sourcePoint" />
+            <mxPoint x="340" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="editions_to_car_junction" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#708090;strokeWidth=1.5;" parent="1" source="game_editions_attributes" target="cars_in_editions_attributes" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="640" y="410" as="sourcePoint" />
+            <mxPoint x="540" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="editions_to_char_junction" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#708090;strokeWidth=1.5;" parent="1" target="characters_in_editions_attributes" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="740" y="490" as="sourcePoint" />
+            <mxPoint x="540" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="editions_to_missions" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#708090;strokeWidth=1.5;" parent="1" source="game_editions_entity" target="missions_attributes" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="740" y="240" as="sourcePoint" />
+            <mxPoint x="740" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BInsnNw77H9iG5m_2_Yc-3" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="game_editions_entity" target="characters_attributes">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="720" y="360" as="sourcePoint" />
+            <mxPoint x="420" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

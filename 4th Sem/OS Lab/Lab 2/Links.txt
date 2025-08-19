@@ -1,0 +1,3 @@
+Makefile Tutorial: https://makefiletutorial.com/
+
+How to make linux executables: https://gcore.com/learning/how-to-make-file-executable-in-linux/
