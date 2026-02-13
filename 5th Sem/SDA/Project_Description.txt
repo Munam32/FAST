@@ -1,0 +1,17 @@
+Labs Management System
+
+Develop a system to manage information about labs in a university. The system stores data about labs, sections, timings, instructors and TA's. It also stores information about venues - rooms and buildings. Each lab (section) is assigned a single instructor; however it may have more than one TA's.
+The system stores two types of timings: expected start and end timings (schedule), and actual start and end times (time sheet). The basic data (including schedule) is populated by an academic officer. The time sheet is filled by an attendant. Each building has a seperate attendant.
+The head of department may generate various reports:
+Complete lab schedule for entire week
+Filled time sheet for all labs in a given week
+Time sheet for all sessions (in a semester) of a particular lab, containing total contact hours and leaves
+Finally, an instructor may request academic office to schedule a makeup lab. The attendant shall enter start and end times of the lab in the time sheet for that week. The reports generated afterwards, shall contain updated contact hours and leaves.
+
+
+Instructions:
+You can use either C++ or Java; no other language is allowed
+The system shall use binary files to store the data; you cannot use any DBMS !
+You are required to run the tool CCCC on your code, and submit a quality report (including CK metrics)
+Also submit a class diagram for your system. Aditionally you may prepare some other diagrams/artifacts
+The project can be completed individually or in pairs (group of two)

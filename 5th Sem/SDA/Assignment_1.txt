@@ -1,0 +1,15 @@
+Consider the following system for an online shop that manages orders, and maintains inventory:
+
+The system has three types of users: customers, staff persons, and an owner. The customer can view/search products online, and can place order. An order may contain multiple quantities of various items. The system generates an invoice listing items, their quantities, and the total amount.
+
+A staff person views the order and hands over the products to a delivery boy. The payment can be made either online (credit card) or by cash (on delivery). The staff person updates the order status at each step, and the customer can view this status at any point in time.
+
+Whenever the staff person ships an item, the inventory (stock) is updated. The system displays the remaining number of items. At this point the user, if likes, can ask the relevant supplier to send more items. This request is made usually over phone or email; the system does not handle this use case. However, when the supplies arrive, the staff person updates the item quantities in the system.
+
+The owner of the shop occasionally asks the system to generate different reports, such as details of sales for a particular month, status of inventory (quantity of different items in the store), or information about the most (or the least) selling/popular items.
+
+Now your task is to 
+Q1) Give a use case diagram for the afore-mentioned system. Use generalization, inclusion or extension where possible.
+Q2) Give a class diagram for the system. Show classes, inheritance and associations. Mention important data members; however you do not need to provide functions.
+
+Note: you are required to develop these diagrams using some UML tool, such as Star-UML or Rational Rose. Hand-written submissions will not be marked!

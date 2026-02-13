@@ -1,0 +1,79 @@
+Withdraw Cash from ATM
+
+Actor: Bank Customer
+
+Preconditions:
+1. The ATM must be powered on, operational, and connected to the bank network.
+2. The ATM must contain sufficient cash for the transaction.
+3. The customer must have a valid bank card and know the correct Personal Identification Number (PIN).
+
+Main Flow (Successful Withdrawal):
+    1.  The Customer inserts their bank card into the ATM.
+    2.  The System reads the card and prompts the Customer to enter their PIN.
+    3.  The Customer enters their PIN using the keypad.
+    4.  The System validates the PIN with the bank's authorization center.
+    5.  The System displays a list of transaction options (e.g., Withdraw, Check Balance).
+    6.  The Customer selects the "Withdraw Cash" option.
+    7.  The System prompts the Customer to enter a withdrawal amount.
+    8.  The Customer enters the desired amount.
+    9.  The System verifies that the account has sufficient funds and the amount is within the allowed withdrawal limits.
+    10. The System dispenses the requested cash amount.
+    11. The System asks if the Customer wants a printed receipt.
+    12. The System returns the bank card.
+    13. The Customer takes the cash, card, and receipt (if requested).
+    14. The use case ends.
+
+Alternative Flows:
+
+Invalid PIN: If the PIN is incorrect at step 4, the system will ask the customer to re-enter it. If the PIN is entered incorrectly three consecutive times, the system will retain the card and end the session.
+
+Insufficient Funds: If the account balance is insufficient at step 9, the system will display an error message and return to the transaction options screen (step 5). Exceeds 
+
+Withdrawal Limit: If the requested amount exceeds the daily or per-transaction limit at step 9, the system will display an error and prompt the customer to enter a lower amount.
+
+ATM Out of Cash: 
+If the ATM cannot dispense the requested amount of cash at step 10, it will display a message indicating the failure and may suggest a smaller amount if possible.
+
+Postconditions:
+1. The customer's bank account is debited by the withdrawn amount.
+2. The transaction is logged by the bank's system.
+3. The ATM's internal cash-on-hand is updated.
+
+---
+
+Record Sale at a POS Terminal
+
+
+Actor: Cashier
+
+Preconditions:
+1. The Cashier is logged into the POS system.
+2. The POS terminal is operational and ready to start a new transaction.
+
+Main Flow (Successful Sale):
+    1.  The Cashier starts a new sale transaction on the POS terminal.
+    2.  For each item the customer wishes to purchase, the Cashier scans the item's barcode.
+    3.  The System retrieves the item's price and description from the product database, adds it to the transaction, and updates the subtotal.
+    4.  After all items are scanned, the Cashier indicates the end of item entry.
+    5.  The System calculates the final total, including any applicable taxes.
+    6.  The Cashier confirms the total with the customer and selects the payment method (e.g., Cash, Credit Card).
+    7.  The Customer provides payment.
+    8.  The Cashier enters the payment details into the system. If the payment is by credit card, the system processes the payment via a payment gateway.
+    9.  The System confirms successful payment, opens the cash drawer (if a cash payment), and prints a receipt.
+    10. The Cashier provides the customer with their items, the receipt, and any change due.
+    11. The use case ends.
+
+Alternative Flows:
+
+Item Not Found: If an item's barcode is not found in the database at step 3, the system will display an error. The Cashier may manually enter the item's code or request assistance from a manager.
+
+Customer Voids an Item: At any point before payment, the customer can decide not to buy an item. The Cashier selects the item in the transaction list and removes it.
+
+Payment Declined: If a credit/debit card payment is declined at step 8, the system will display a "Declined" message. The Cashier will ask the customer for an alternative form of payment.
+
+Cancel Sale: The customer or cashier can cancel the entire transaction before the payment is finalized. The system will void the sale.
+
+Postconditions:
+1. A record of the completed sale is stored in the system's database.
+2. The inventory levels for the purchased items are reduced.
+3. The payment transaction is logged.
